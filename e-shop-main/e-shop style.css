@@ -159,3 +159,55 @@ h1 {
 .add-to-cart:hover {
   background-color: darkorange;
 }
+//adaptiv
+
+@media (min-width: 2560px) {
+  .all_product {
+    max-width: none;
+  }
+  
+  .card_product {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  .add_to_cart button {
+    width: 50%;
+    align-self: center;
+  }
+} 
+
+ @media (min-width: 1024px) and (max-width: 2559px) {
+  .card_product {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+
+  .add_to_cart button {
+    width: 50%;
+    align-self: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .all_product {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_product {
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .image_product img {
+    border-radius: 5px 5px 0 0;
+    height: auto;
+  }
+
+  .add_to_cart button {
+    width: 50%;
+    align-self: center;
+  }
+}
